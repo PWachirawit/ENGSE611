@@ -1,0 +1,84 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: grey;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: auto;
+    text-align: center;
+    color: #333;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SErrQYrLqVSE00YQ3oDiUONvdTcJ_NNpgQ&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: auto;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    text-align: left;
+    font-size: 16px;
+    color: #444;
+}
+
+.highlight {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main-header {
+    text-align: center;
+    background-color: lightyellow;
+    background-image: url('https: //media1.tenor.com/m/cRs4lnEWw48AAAAd/everknight-evernight.gif');
+}
+
+.box-color {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid #000;
+    margin: 10px 0;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+}
+
+.box-image {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #000;
+}
+
+.img-1 {
+    background-image: url('https://media1.tenor.com/m/cRs4lnEWw48AAAAd/everknight-evernight.gif');
+}
+
+.img-2 {
+    background-image: url('https://media.tenor.com/ltdcc9CwgQMAAAAj/march-7th-dance.gif');
+}
+
+.img-3 {
+    background-image: url('https://media.tenor.com/MvUg_RCGC0YAAAAM/haru-urara.gif');
+}
+
+.box-image2 {
+    width: 300px;
+    height: 300px;
+    background-image: url('https://i.pinimg.com/originals/c2/1d/e4/c21de43465e25cafa4bab80fa7311b19.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #000;
+}
