@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title หัวข้อ</title>
+</head>
+
+<body>
+    <style>
+        .flex-box {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 2px solid #ccc;
+        }
+        
+        .item {
+            background: navy;
+            color: white;
+            font-size: 20px;
+            width: 100px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .stretch-item {
+            background: teal;
+        }
+    </style>
+</body>
+
+<body>
+    <h2>1)justifly-content : center</h2>
+    <div class="flex-box" style="justify-content: center;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2>2)justifly-content : space-between</h2>
+    <div class="flex-box" style="justify-content: space-between;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2>3)align-items : stretch</h2>
+    <div class="flex-box" style="align-items: stretch; height: 200px;">
+        <div class="item stretch-item">1</div>
+        <div class="item stretch-item">2</div>
+        <div class="item stretch-item">3</div>
+    </div>
+</body>
+
+</html>

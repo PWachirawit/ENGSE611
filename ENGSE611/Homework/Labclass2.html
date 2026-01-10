@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2-Column Layout ด้วย CSS Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        /* Grid container */
+        
+        .container {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            min-height: 100vh;
+        }
+        /* เมนู */
+        
+        .menu {
+            background-image: url('https://media.tenor.com/MvUg_RCGC0YAAAAM/haru-urara.gif');
+            background-size: cover;
+            padding: auto 20px;
+        }
+        
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .menu li {
+            margin: 10px 0;
+        }
+        /* เนื้อหา */
+        
+        .content {
+            background-image: url('https://cdn.discordapp.com/attachments/902786133283471410/1459390762432200836/FB_IMG_1767949986394.jpg?ex=69631b0f&is=6961c98f&hm=bc624f8b53d65dffc83b3f9ed95001f2f9480cb2b1e221e5e008d25915ec6ab8&');
+            background-size: cover;
+            padding: 20px;
+        }
+        /* Responsive */
+        
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>โจทย์ที่ 2: 2-Column Layout ด้วย CSS Grid</h1>
+
+    <div class="container">
+        <div class="menu">
+            <h3>เมนู</h3>
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Yo Chat its real?</h2>
+            <p>นี่คือเนื้อหาหลักของเว็บไซต์</p>
+            <p>ลองทดสอบย่อ-ขยายหน้าจอเพื่อดู Responsive Layout</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab CSS1 - Card Layout ด้วย Flexbox</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2c2c2c;
+            color: #000;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        
+        .container {
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+        
+        .container h2 {
+            margin-bottom: 30px;
+        }
+        /* Flexbox layout */
+        
+        .card-wrapper {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .card {
+            background-color: #111;
+            width: 300px;
+            color: #ffffff;
+            overflow: hidden;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: scale(1.3);
+        }
+        
+        .card h3 {
+            margin-top: 0;
+        }
+        
+        .card p {
+            color: #555;
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>การบ้าน (Lab CSS1)</h1>
+        <p>ออกแบบ Card Layout ด้วย Flexbox</p>
+    </header>
+
+    <div class="container">
+        <h2>โจทย์ที่ 1: Card Layout ด้วย Flexbox</h2>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <h3>ข้อความจากเอเลี่ยน</h3>
+                <img src="https://cdn.discordapp.com/attachments/902786133283471410/1154229880230268938/FB_IMG_1695260193343.jpg?ex=6962fed8&is=6961ad58&hm=59b52e7e25cd433afaa8a61b404f772c705969e83f05f3bb5aae4dbdadae5b88">
+                <p style="color: white;">𒁮 𒁯 𒁰 𒁱 𒁲 𒁳 𒁴 𒁵 𒁶 𒁷 𒁸 𒁹 𒁺 𒁻 𒁼 𒁽 𒁾 𒁿 𒂀 𒂁 𒂂 𒂃 𒂄 𒂅 𒂆 𒂇 𒂈 𒂉 𒂊 𒂋 𒂌 𒂍 𒂎 𒂏 𒂐 𒂑 𒂓 𒂔 𒂕 𒂖 𒂗 𒂘 𒂙 𒂚 𒂛 𒂜 𒂝 𒂞 𒂟 𒂠 𒂡 𒂢 𒂣 𒂥 𒂦 𒂭 𒂮 𒂳 𒂴 𒂵 𒂶 𒂷 𒃬 𒃭 𒃮 𒃯 𒃰 𒃱 𒃲 𒃳 𒃴 𒃵 𒃶 𒃷</p>
+            </div>
+
+            <div class="card">
+                <h3>จิงปะแชท</h3>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqvOVCZ-hK5-jI2jo7QldBSdrXdq_WZnnSoUPIwW2M4ll794hF">
+                <p style="color: white;">Get a job bum</p>
+            </div>
+
+            <div class="card">
+                <h3>Thukuna</h3>
+                <img src="https://media1.tenor.com/m/TJt-mUIGmQkAAAAd/thukuna.gif">
+                <p style="color: white; ">GUGUGAGA</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
